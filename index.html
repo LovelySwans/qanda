@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Форма для вакансії</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    form {
+      max-width: 600px;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .form-section {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Форма для збору інформації про вакансію</h1>
+  <p>Будь ласка, заповніть форму, і ваші відповіді будуть відправлені на <strong>vlebid@icloud.com</strong>.</p>
+  
+  <form 
+    action="ACTION_URL"  <!-- Замініть ACTION_URL на адресу вашої форми з Formspree -->
+    method="POST"
+  >
+    <!-- Щоб лист Formspree відправлявся саме на vlebid@icloud.com, 
+         в особистому кабінеті Formspree вкажіть цю адресу як одержувача. -->
+
+    <!-- Приклад прихованого поля, якщо хочете вказати тему листа -->
+    <input type="hidden" name="_subject" value="Нова заявка з форми вакансії" />
+
+    <div class="form-section">
+      <label for="vacancy">Посилання на вакансію, будь ласка</label>
+      <input type="text" id="vacancy" name="Посилання на вакансію" required />
+    </div>
+
+    <h2>Загальні питання про вакансію:</h2>
+    <div class="form-section">
+      <label for="q1">1. Наскільки термінова ця вакансія?</label>
+      <textarea id="q1" name="Наскільки термінова вакансія" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q2">2. Хто стейкхолдери цієї позиції? Хто приймає остаточне рішення щодо найму?</label>
+      <textarea id="q2" name="Стейкхолдери та прийняття рішення" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q3">3. Які основні критерії відбору? Три ключові пункти</label>
+      <textarea id="q3" name="Основні критерії відбору" rows="3" required></textarea>
+    </div>
+
+    <h2>Питання про бізнес та цілі:</h2>
+    <div class="form-section">
+      <label for="q4">1. Які бізнес-цілі на 2025 рік?</label>
+      <textarea id="q4" name="Бізнес-цілі на 2025" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q5">2. Яка культура та цінності компанії?</label>
+      <textarea id="q5" name="Культура та цінності" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q6">3. Яка зона відповідальності та KPI/OKR на цій позиції?</label>
+      <textarea id="q6" name="Зона відповідальності та KPI/OKR" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q7">4. Які цільові ринки (географія, B2B/B2C)?</label>
+      <textarea id="q7" name="Цільові ринки" rows="3" required></textarea>
+    </div>
+
+    <h2>Питання про продукт та процеси:</h2>
+    <div class="form-section">
+      <label for="q8">1. Хто керівник цієї позиції? Яка команда?</label>
+      <textarea id="q8" name="Керівник та команда" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q9">2. Як приймаються рішення? Який горизонт планування?</label>
+      <textarea id="q9" name="Прийняття рішень та планування" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q10">3. Який стиль менеджменту в компанії?</label>
+      <textarea id="q10" name="Стиль менеджменту" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q11">4. Які рішення спеціаліст може приймати самостійно?</label>
+      <textarea id="q11" name="Рівень самостійності" rows="3" required></textarea>
+    </div>
+
+    <h2>Питання про зону відповідальності та перспективи:</h2>
+    <div class="form-section">
+      <label for="q12">1. Які задачі ставляться на випробувальний термін?</label>
+      <textarea id="q12" name="Задачі на випробувальний термін" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q13">2. Які можливості для зростання є в компанії?</label>
+      <textarea id="q13" name="Можливості для зростання" rows="3" required></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q14">3. Які ви бачите мої шанси?</label>
+      <textarea id="q14" name="Шанси на успіх" rows="3" required></textarea>
+    </div>
+
+    <p>* Дякую за ваші відповіді! Сподіваюся на плідну співпрацю.</p>
+    
+    <button type="submit">Надіслати</button>
+  </form>
+</body>
+</html>
