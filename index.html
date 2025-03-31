@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Будь ласка, надайте відповіді на питання щодо вакансії</title>
+  <title>Please provide answers regarding the vacancy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Загальні стилі в діловому IT-стилі */
+    /* General styles in a business IT-style */
     body {
       margin: 0;
       padding: 2rem;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4; /* Світло-сірий фон */
-      color: #333; /* Стандартний текстовий колір */
+      background-color: #f4f4f4; /* Light gray background */
+      color: #333; /* Standard text color */
     }
 
     h1, h2 {
@@ -24,11 +24,11 @@
       margin-bottom: 1rem;
     }
 
-    /* Стилі форми */
+    /* Form styles */
     form {
       max-width: 700px;
       margin: 0 auto;
-      background: #fff; /* Білий фон */
+      background: #fff; /* White background */
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -64,7 +64,7 @@
       margin-bottom: 1.5rem;
     }
 
-    /* Кнопка з відтінком "синій ближче до фуксії" */
+    /* Button with a "blue closer to fuchsia" shade */
     button {
       display: inline-block;
       padding: 0.75rem 2rem;
@@ -78,7 +78,7 @@
       font-weight: 600;
     }
     button:hover {
-      background-color: #7a1bd2; /* Трохи темніший відтінок */
+      background-color: #7a1bd2; /* Slightly darker shade */
     }
     
     @media (max-width: 600px) {
@@ -92,94 +92,94 @@
   </style>
 </head>
 <body>
-  <h1>Форма для збору інформації про вакансію</h1>
-  <p>Будь ласка, надайте відомі вам відповіді. Якщо відповідь не відома, вкажіть будь ласка, "не відомо"  .</p>
+  <h1>Vacancy Information Form</h1>
+  <p>Please provide the answers you know. If the answer is unknown, please write "unknown".</p>
   
   <form 
     action="https://formspree.io/f/myzkydpj"
     method="POST"
   >
-    <!-- Тема листа, що прийде з форми -->
-    <input type="hidden" name="_subject" value="Нова заявка з форми вакансії" />
+    <!-- Subject of the email that comes from the form -->
+    <input type="hidden" name="_subject" value="New application from vacancy form" />
 
     <div class="form-section">
-      <label for="vacancy">Посилання на вакансію, будь ласка:</label>
-      <input type="text" id="vacancy" name="Посилання на вакансію" placeholder="https://..." required />
+      <label for="vacancy">Link to the vacancy, please:</label>
+      <input type="text" id="vacancy" name="Vacancy Link" placeholder="https://..." required />
     </div>
 
-    <!-- НОВЕ ПОЛЕ ДЛЯ ЕЛЕКТРОННОЇ АДРЕСИ -->
+    <!-- NEW FIELD FOR EMAIL ADDRESS -->
     <div class="form-section">
-      <label for="email">Ваша електронна адреса:</label>
-      <input type="email" id="email" name="Електронна адреса" placeholder="email@domain.com" required />
+      <label for="email">Your email address:</label>
+      <input type="email" id="email" name="Email Address" placeholder="email@domain.com" required />
     </div>
 
-    <h2>Загальні питання про вакансію:</h2>
+    <h2>General questions about the vacancy:</h2>
     <div class="form-section">
-      <label for="q1">1. Наскільки термінова ця вакансія?</label>
-      <textarea id="q1" name="Наскільки термінова вакансія" rows="3" placeholder="Ваша відповідь..." required></textarea>
+      <label for="q1">1. How urgent is this vacancy? (optional)</label>
+      <textarea id="q1" name="Vacancy Urgency" rows="3" placeholder="Your answer..."></textarea>
     </div>
     <div class="form-section">
-      <label for="q2">2. Хто стейкхолдери цієї позиції? Хто приймає остаточне рішення щодо найму?</label>
-      <textarea id="q2" name="Стейкхолдери та прийняття рішення" rows="3" placeholder="Ваша відповідь..." required></textarea>
+      <label for="q2">2. Who are the stakeholders for this position? Who makes the final hiring decision? (optional)</label>
+      <textarea id="q2" name="Stakeholders and Decision Makers" rows="3" placeholder="Your answer..."></textarea>
     </div>
     <div class="form-section">
-      <label for="q3">3. Які основні критерії відбору? Три ключові пункти</label>
-      <textarea id="q3" name="Основні критерії відбору" rows="3" placeholder="Ваша відповідь..." required></textarea>
-    </div>
-
-    <h2>Питання про бізнес та цілі:</h2>
-    <div class="form-section">
-      <label for="q4">1. Які бізнес-цілі на 2025 рік?</label>
-      <textarea id="q4" name="Бізнес-цілі на 2025" rows="3" placeholder="Ваша відповідь..." required></textarea>
-    </div>
-    <div class="form-section">
-      <label for="q5">2. Яка культура та цінності компанії?</label>
-      <textarea id="q5" name="Культура та цінності" rows="3" placeholder="Ваша відповідь..." required></textarea>
-    </div>
-    <div class="form-section">
-      <label for="q6">3. Яка зона відповідальності та KPI/OKR на цій позиції?</label>
-      <textarea id="q6" name="Зона відповідальності та KPI/OKR" rows="3" placeholder="Ваша відповідь..." required></textarea>
-    </div>
-    <div class="form-section">
-      <label for="q7">4. Які цільові ринки (географія, B2B/B2C)?</label>
-      <textarea id="q7" name="Цільові ринки" rows="3" placeholder="Ваша відповідь..." required></textarea>
+      <label for="q3">3. What are the main selection criteria? Three key points (optional)</label>
+      <textarea id="q3" name="Selection Criteria" rows="3" placeholder="Your answer..."></textarea>
     </div>
 
-    <h2>Питання про продукт та процеси:</h2>
+    <h2>Business and goal-related questions:</h2>
     <div class="form-section">
-      <label for="q8">1. Хто керівник цієї позиції? Яка команда?</label>
-      <textarea id="q8" name="Керівник та команда" rows="3" placeholder="Ваша відповідь..." required></textarea>
+      <label for="q4">1. What are the business goals for 2025? (optional)</label>
+      <textarea id="q4" name="2025 Business Goals" rows="3" placeholder="Your answer..."></textarea>
     </div>
     <div class="form-section">
-      <label for="q9">2. Як приймаються рішення? Який горизонт планування?</label>
-      <textarea id="q9" name="Прийняття рішень та планування" rows="3" placeholder="Ваша відповідь..." required></textarea>
+      <label for="q5">2. What is the company culture and what are its values? (optional)</label>
+      <textarea id="q5" name="Culture and Values" rows="3" placeholder="Your answer..."></textarea>
     </div>
     <div class="form-section">
-      <label for="q10">3. Який стиль менеджменту в компанії?</label>
-      <textarea id="q10" name="Стиль менеджменту" rows="3" placeholder="Ваша відповідь..." required></textarea>
+      <label for="q6">3. What is the scope of responsibility and the KPI/OKRs for this position? (optional)</label>
+      <textarea id="q6" name="Responsibilities and KPI/OKRs" rows="3" placeholder="Your answer..."></textarea>
     </div>
     <div class="form-section">
-      <label for="q11">4. Які рішення спеціаліст може приймати самостійно?</label>
-      <textarea id="q11" name="Рівень самостійності" rows="3" placeholder="Ваша відповідь..." required></textarea>
-    </div>
-
-    <h2>Питання про зону відповідальності та перспективи:</h2>
-    <div class="form-section">
-      <label for="q12">1. Які задачі ставляться на випробувальний термін?</label>
-      <textarea id="q12" name="Задачі на випробувальний термін" rows="3" placeholder="Ваша відповідь..." required></textarea>
-    </div>
-    <div class="form-section">
-      <label for="q13">2. Які можливості для зростання є в компанії?</label>
-      <textarea id="q13" name="Можливості для зростання" rows="3" placeholder="Ваша відповідь..." required></textarea>
-    </div>
-    <div class="form-section">
-      <label for="q14">3. Які ви бачите мої шанси?</label>
-      <textarea id="q14" name="Шанси на успіх" rows="3" placeholder="Ваша відповідь..." required></textarea>
+      <label for="q7">4. What are the target markets (geography, B2B/B2C)? (optional)</label>
+      <textarea id="q7" name="Target Markets" rows="3" placeholder="Your answer..."></textarea>
     </div>
 
-    <p>* Дякую за ваші відповіді! Сподіваюся на плідну співпрацю.</p>
+    <h2>Questions about the product and processes:</h2>
+    <div class="form-section">
+      <label for="q8">1. Who is the manager for this position? What is the team like? (optional)</label>
+      <textarea id="q8" name="Manager and Team" rows="3" placeholder="Your answer..."></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q9">2. How are decisions made? What is the planning horizon? (optional)</label>
+      <textarea id="q9" name="Decision Making and Planning" rows="3" placeholder="Your answer..."></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q10">3. What is the management style in the company? (optional)</label>
+      <textarea id="q10" name="Management Style" rows="3" placeholder="Your answer..."></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q11">4. What decisions can the specialist make independently? (optional)</label>
+      <textarea id="q11" name="Autonomy Level" rows="3" placeholder="Your answer..."></textarea>
+    </div>
+
+    <h2>Questions about responsibilities and growth prospects:</h2>
+    <div class="form-section">
+      <label for="q12">1. What tasks are expected during the probation period? (optional)</label>
+      <textarea id="q12" name="Probation Period Tasks" rows="3" placeholder="Your answer..."></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q13">2. What growth opportunities are there in the company? (optional)</label>
+      <textarea id="q13" name="Growth Opportunities" rows="3" placeholder="Your answer..."></textarea>
+    </div>
+    <div class="form-section">
+      <label for="q14">3. What do you think are my chances? (optional)</label>
+      <textarea id="q14" name="Chances of Success" rows="3" placeholder="Your answer..."></textarea>
+    </div>
+
+    <p>* Thank you for your answers! Looking forward to fruitful collaboration.</p>
     
-    <button type="submit">Надіслати</button>
+    <button type="submit">Submit</button>
   </form>
 </body>
 </html>
